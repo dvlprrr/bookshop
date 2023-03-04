@@ -4,13 +4,14 @@ import styled from "styled-components";
 const Wrapper = styled.header`
   display: flex;
   justify-content: space-between;
-  width: 1440px;
+  width: 98%;
   margin: 0 auto;
+  align-items: center;
 `;
 const Logo = styled.h1`
   margin: 0;
   margin: 25px 0;
-  font-size: 37px;
+  font-size: 25px;
   cursor: pointer;
 `;
 const NavList = styled.ul`
