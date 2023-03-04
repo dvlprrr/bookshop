@@ -40,7 +40,7 @@ function BookShops() {
   return (
     <Background>
       <Wrapper>
-        <Title>Лучшие книжные магазины России</Title>
+        <Title>Best bookshops in Russia</Title>
         <LogoWrapper>
           <Link target="_blank" href="https://www.labirint.ru/">
             <Logo src={logoLabirint}></Logo>

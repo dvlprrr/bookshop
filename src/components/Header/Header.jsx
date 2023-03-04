@@ -1,18 +1,22 @@
 import React from "react";
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 const Wrapper = styled.header`
   display: flex;
   justify-content: space-between;
   width: 98%;
   margin: 0 auto;
   align-items: center;
+  border-bottom: solid 1px #e1e1e1;
 `;
-const Logo = styled.h1`
+const Logo = styled(Link)`
+  color: black;
   margin: 0;
   margin: 25px 0;
   font-size: 25px;
+  font-weight: 500;
   cursor: pointer;
+  text-decoration: none;
 `;
 const NavList = styled.ul`
   margin: 0;
@@ -30,7 +34,8 @@ const NavItems = styled.li`
     margin-right: 0;
   }
 `;
-const NavLink = styled.a`
+const NavLink = styled(Link)`
+  color: black;
   padding-bottom: 4px;
   text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
@@ -43,29 +48,25 @@ const NavLink = styled.a`
   }
 `;
 
-// const LastNavItem = styled(NavItems)`
-//   margin-right: 0;
-// `;
-
 function Header() {
   return (
     <Wrapper>
-      <Logo>Bookshop</Logo>
+      <Logo to={"/"}>Bookshop</Logo>
       <NavList>
         <NavItems>
-          <NavLink>КНИГИ</NavLink>
+          <NavLink to={"/books"}>BOOKS</NavLink>
         </NavItems>
         <NavItems>
-          <NavLink>АВТОРЫ</NavLink>
+          <NavLink to={"/authors"}>AUTHORS</NavLink>
         </NavItems>
         <NavItems>
-          <NavLink>ЖУРНАЛ</NavLink>
+          <NavLink to={"/journal"}>JOURNAL</NavLink>
         </NavItems>
         <NavItems>
-          <NavLink>НОВОСТИ</NavLink>
+          <NavLink to={"/news"}>NEWS</NavLink>
         </NavItems>
         <NavItems>
-          <NavLink>О НАС</NavLink>
+          <NavLink to={"/about"}>ABOUT US</NavLink>
         </NavItems>
       </NavList>
     </Wrapper>

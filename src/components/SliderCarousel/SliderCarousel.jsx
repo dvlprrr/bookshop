@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { sliders } from "../../sliders";
+import { sliders } from "../../data";
 import "./index.css";
 
 const SliderSection = styled.section`
@@ -64,9 +64,9 @@ function SliderCarousel() {
   };
   return (
     <Slider {...settings}>
-      {sliders.map((item) => {
+      {sliders.map((item, index) => {
         return (
-          <SliderSection src={item.img}>
+          <SliderSection key={index} src={item.img}>
             <SliderWrapper>
               <Wrapper>
                 <Title>{item.title}</Title>
