@@ -7,7 +7,7 @@ import Card from "../Card/Card";
 import Title from "../Title/Title";
 
 const Wrapper = styled.div`
-  width: 1440px;
+  /* width: 1440px; */
   display: flex;
   flex-direction: column;
   align-items: center;

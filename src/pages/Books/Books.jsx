@@ -16,11 +16,16 @@ const Catalog = styled.ul`
   gap: 10px;
 `;
 const Sort = styled.div`
-  text-align: right;
+  display: flex;
+  justify-content: end;
   margin-bottom: 15px;
 `;
 const SortText = styled.p`
   margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -0.2px;
 `;
 
 const Filter = styled.div`
@@ -51,6 +56,16 @@ const FilterText = styled.p`
 const BooksSort = styled.div`
   margin-top: 50px;
 `;
+const SortSelect = styled.select`
+  outline: none;
+  border: none;
+  font-family: "Montserrat";
+`;
+const SortOption = styled.option`
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+`;
 function Books() {
   return (
     <Wrapper>
@@ -69,6 +84,11 @@ function Books() {
       <BooksSort>
         <Sort>
           <SortText>Sort by : </SortText>
+          <SortSelect>
+            <SortOption>popularity</SortOption>
+            <SortOption>alphabet</SortOption>
+            <SortOption>price</SortOption>
+          </SortSelect>
         </Sort>
         <Catalog>
           {books.map((item, index) => {

@@ -15,14 +15,14 @@ const Title = styled.h2`
   color: #000;
 `;
 const Content = styled.div`
-  width: 1110px;
+  width: 1200px;
   margin: 0 auto;
   margin-top: 50px;
   display: flex;
   flex-direction: row;
 `;
 const MainNews = styled.div`
-  width: 60%;
+  width: 65%;
   margin-right: 50px;
 `;
 
@@ -49,7 +49,7 @@ const OtherNews = styled.ul`
   margin: 0;
   padding: 0;
   padding-left: 35px;
-  width: 30%;
+  width: 35%;
   border-left: 1px solid hsl(0deg 0% 87%);
 `;
 const OtherNewsItems = styled.li`

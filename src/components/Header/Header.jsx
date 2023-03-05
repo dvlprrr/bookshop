@@ -20,15 +20,18 @@ const Logo = styled(Link)`
 `;
 const NavList = styled.ul`
   margin: 0;
+  padding: 0;
   margin: 40px 0;
+  width: 30%;
   display: flex;
+  justify-content: space-between;
   font-family: "Montserrat";
   font-size: 11px;
   font-weight: 600;
 `;
 const NavItems = styled.li`
   list-style-type: none;
-  margin-right: 70px;
+  /* margin-right: 70px; */
   cursor: pointer;
   &:last-child {
     margin-right: 0;

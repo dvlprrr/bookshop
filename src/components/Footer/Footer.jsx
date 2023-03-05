@@ -2,11 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.footer`
+  background-color: #f3f2f1;
 `;
 const Container = styled.div`
-  width: 55%;
-  margin: 0 auto ;
-  padding: 20px 0 10px;
+  width: 98%;
+  margin: 0 auto;
+  padding: 20px 0 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
